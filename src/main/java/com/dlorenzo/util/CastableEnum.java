@@ -6,7 +6,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public interface CastableEnum {
-    Function<String, String> getDataFunction();
+    Function<String, String> getValueFunction();
 
     String getKey();
 
@@ -38,7 +38,7 @@ public interface CastableEnum {
 
     default <T> Optional<T> as(Class<T> returnType) {
         Optional<T> result = Optional.empty();
-        String value = getDataFunction().apply(getKey());
+        String value = getValueFunction().apply(getKey());
 
         if (value != null) {
             result = ClassUtils.newInstance(returnType, value);
