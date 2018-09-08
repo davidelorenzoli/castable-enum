@@ -2,7 +2,7 @@
 This project allows to create a Java enum which inherits enum item value automatic conversion functionality.
 
 ## The Problem
-Imagine you have an enum to hold your JVM arguments. To get the actual JVM argument value as a URL object you would normally do:
+Imagine you have an enum to hold your application JVM arguments. To get the actual JVM argument value as a URL object you would normally do:
 
 ```Java
 String webServerKey = JVMArgument.WEB_SERVER.getKey();
