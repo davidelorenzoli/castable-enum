@@ -34,6 +34,15 @@ public class JVMArgumentTest {
     }
 
     @Test
+    public void asNumber() {
+        Number number = JVMArgument.SOURCE_ID.asNumber();
+
+        assertNotNull(number);
+        assertEquals(123, number.intValue());
+        assertEquals(123L, number.longValue());
+    }
+
+    @Test
     public void asArray() {
         List<String> list = JVMArgument.FEATURES.asList(";", String.class);
 

@@ -14,7 +14,7 @@ public enum JVMArgument implements CastableEnum {
     }
 
     @Override
-    public Function<String, String> getValueFunction() {
+    public Function<String, String> getMappingFunction() {
         return key -> System.getProperty(key);
     }
 
