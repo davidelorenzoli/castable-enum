@@ -1,3 +1,5 @@
+![Java CI with Maven](https://github.com/davidelorenzoli/castable-enum/workflows/Java%20CI%20with%20Maven/badge.svg?branch=master)
+
 # castable-enum
 This project allows to create a Java enum which inherits enum item value automatic conversion functionality.
 
